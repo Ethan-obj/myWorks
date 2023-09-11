@@ -7,6 +7,7 @@
 - 可以通过重新组织表空间进行将空洞归还给OS
     - 如果是MyASIM存储引擎则通过``OPTIMIZE TABLE``
     - 如果是InnoDB则通过``alter table tb_user engine='innodb'``
+## RollingFileAppender是Log4j2中的一种能够实现日志文件滚动(rollover)归档的Appender
 ```xml
 <Appenders>
     <RollingFile name="file-log"
